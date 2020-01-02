@@ -11,6 +11,7 @@ var getLogin = async function(req:Request, res:Response, next:Function){
 
 
    
+     console.log("a");
      
     res.json(detalle_usuario[0]["ft_view_usuario"])
 }
