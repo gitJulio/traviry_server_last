@@ -17,7 +17,6 @@ var getLogin = function (req, res, next) {
             console.log(err);
             res.send({ status: false });
         });
-        console.log("aaaaaaaaa");
         res.json(detalle_usuario[0]["ft_view_usuario"]);
     });
 };
