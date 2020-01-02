@@ -5,7 +5,7 @@ var insertItinerarios = async function(req:Request, res:Response, next:Function)
 
 
 
-     let detalle_itinerarios= await db.func('traviry.ft_proc_itinerario_insert',JSON.stringify(req.body)).catch(err=>{
+     let detalle_itinerarios= await db.func('traviry.ft_proc_itinerario_insert',JSON.stringify(req.body)).catch((err: any)=>{
          console.log(err);
          res.send({status:false})
      })

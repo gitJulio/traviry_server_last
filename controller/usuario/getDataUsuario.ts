@@ -5,7 +5,7 @@ var getDataUsuario = async function(req:Request, res:Response, next:Function){
 
 
 
-     let detalle_usuario= await db.func('traviry.ft_view_detalle_usuario',req.body.id_usuario).catch(err=>{
+     let detalle_usuario= await db.func('traviry.ft_view_detalle_usuario',req.body.id_usuario).catch((err: any)=>{
          console.log(err);
          res.send({status:false})
      })

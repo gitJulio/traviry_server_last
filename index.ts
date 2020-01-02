@@ -27,5 +27,5 @@ server.app.use('/api', router);
 
 //Inicio de servidor
 server.start(()=>{
-  console.log(`Servidor corriendo en puerto ${server.port}`)
+  console.log(`Servidor corriendo en puerto  ${server.port}`)
 });

@@ -5,7 +5,7 @@ var getItinerarios = async function(req:Request, res:Response, next:Function){
 
 
 
-     let detalle_itinerarios= await db.func('traviry.ft_view_itinerarios',req.body.id_usuario).catch(err=>{
+     let detalle_itinerarios= await db.func('traviry.ft_view_itinerarios',req.body.id_usuario).catch((err: any)=>{
          console.log(err);
          res.send({status:false})
      })

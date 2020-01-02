@@ -25,5 +25,5 @@ server.app.use('/api', router_1.default);
 // });
 //Inicio de servidor
 server.start(() => {
-    console.log(`Servidor corriendo en puerto ${server.port}`);
+    console.log(`Servidor corriendo en puerto  ${server.port}`);
 });
