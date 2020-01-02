@@ -9,6 +9,7 @@ var insertItinerarios = async function(req:Request, res:Response, next:Function)
          console.log(err);
          res.send({status:false})
      })
+    //  console.log(JSON.stringify(req.body));
 
     res.json(detalle_itinerarios[0]["ft_proc_itinerario_insert"])
 

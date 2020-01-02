@@ -10,6 +10,8 @@ var getItinerarios = async function(req:Request, res:Response, next:Function){
          res.send({status:false})
      })
 
+     
+     
     res.json(detalle_itinerarios[0]["ft_view_itinerarios"])
 
 }
